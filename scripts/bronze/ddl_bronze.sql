@@ -1,4 +1,13 @@
-/*First create DDL of each original DataSet (from files source_crm and source_erp*/
+/*
+===================================================================================
+DDL Script: Create Bronze Tables
+===================================================================================
+
+Script Purpose:
+	Creates tables in the bornze schema, dropping existing tables if they already exists
+	in order to avoid errors.
+	Run the script to re-define the DDL structure of 'bronze' tables
+*/
 
 IF OBJECT_ID ('bronze.crm_cust_info', 'U') IS NOT NULL
 	DROP TABLE bronze.crm_cust_info;
