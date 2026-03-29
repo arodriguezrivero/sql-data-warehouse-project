@@ -40,20 +40,43 @@ The business layer is fully documented to empower analysts:
 * **`dim_products`**: Full product lifecycle and categorization.
 * **`fact_sales`**: Granular transactional data linked to dimensions.
 
+## 📈 Advanced Analytics & Business Intelligence
+The **Gold Layer** is powered by a suite of advanced SQL scripts designed to extract actionable KPIs. This goes beyond basic CRUD operations, implementing sophisticated analytical patterns:
+
+### 1. Performance Analytics (YoY / MoM)
+Using **Window Functions** (`LAG`, `LEAD`), the system compares current sales against previous periods to detect growth or decline at the product and category levels.
+* **Logic:** `current_sales - LAG(current_sales) OVER (PARTITION BY product_name ORDER BY order_year)`
+
+### 2. Customer Segmentation Logic
+A dynamic segmentation engine classifies customers based on their behavioral data:
+* **VIP:** >12 months history AND >€5,000 spend.
+* **Regular:** >12 months history AND ≤€5,000 spend.
+* **New:** <12 months history.
+
+### 3. Cumulative & Part-to-Whole Analysis
+* **Running Totals:** Track sales velocity over time.
+* **Percentage of Total:** Identifies high-impact categories (e.g., identifying "Bikes" as the primary revenue driver).
+
+### 4. Comprehensive Reporting Views
+I created consolidated views for **Customers** and **Products** that aggregate:
+- **Recency:** Months since the last transaction.
+- **Lifespan:** Total duration of the customer relationship.
+- **Average Monthly Spend/Revenue:** Normalized performance metrics.
+
 ## 📂 Project Structure
 ```text
 ├── advanced/
 │   └──advanced_data_analysis.sql
 ├── datasets/
-│   ├── source_crm/          
-│   ├── source_erp/          
+│   └──  source_crm/          
+│   └── source_erp/          
 ├── docs/
-│   ├── Architecture-DWH.drawio.pdf
-│   ├── Data Flow Diagram.pdf
-│   ├── Data Model Star Schema.pdf
-│   ├── Integration_model.pdf
-│   ├── data_catalog.md
-│   ├── rules_naming_conventions.md
+│   └──  Architecture-DWH.drawio.pdf
+│   └── Data Flow Diagram.pdf
+│   └── Data Model Star Schema.pdf
+│   └── Integration_model.pdf
+│   └── data_catalog.md
+│   └── rules_naming_conventions.md
 ├── scripts/
 │   ├── bronze/
 |       └── ddl_bronze.sql
@@ -63,7 +86,7 @@ The business layer is fully documented to empower analysts:
 │   ├── silver/
 |       └── ddl_silver.sql
 |       └── proc_load_silver.sql
-|   ├── init_database.sql
+|   └── init_database.sql
 ├── tests/
 │   └──crm_cust_info__silver_transform.sql
 │   └── crm_prd_info__silver_transform.sql
