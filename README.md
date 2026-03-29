@@ -80,4 +80,6 @@ Clone this repository.
 ## 👩‍💻 About Me
 
 I am a Senior Data Engineer focused on building scalable, well-documented data infrastructures. My goal is to transform messy data into strategic business assets.
+Click [here](https://www.linkedin.com/in/anabelle-rodriguez-rivero-a2115a178/) to see my LinkedIn Profile. 
+Click [here](https://www.upwork.com/freelancers/~01417cd8167d75f456?mp_source=share) to see my Upwork Profile.
 
