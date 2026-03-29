@@ -27,7 +27,7 @@ To maintain a production-grade environment, I implemented a strict naming policy
 * **Metadata Tracking:** Every record includes `dwh_load_date` for auditability.
 
 ### 2. ETL & Orchestration
-The data flow is managed via modular **Stored Procedures** (`load_bronze`, `load_silver`, `load_gold`), allowing for:
+The data flow is managed via modular **Stored Procedures** (`load_bronze`, `load_silver`), allowing for:
 * Incremental or full refresh strategies.
 * Standardized error handling and logging.
 * Transformation logic (Mapping, Casting, and Formatting).
