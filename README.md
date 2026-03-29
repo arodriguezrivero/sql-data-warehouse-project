@@ -7,6 +7,8 @@
 ## 📌 Project Overview
 This project demonstrates the end-to-end design and implementation of a **Modern Data Warehouse** for **AeroCycle Global**, a hypothetical bicycle manufacturer. The goal was to consolidate fragmented data from CRM and ERP systems into a unified analytical hub using the **Medallion Architecture**.
 
+To see the Project Plan click [here](https://discovered-comb-a43.notion.site/Data-Warehouse-Project-32f86c5de36780c88e71c6da66b6e32c)
+
 ## 🏗️ Data Architecture
 The pipeline follows the Medallion framework to ensure data quality and lineage:
 
@@ -80,6 +82,8 @@ Clone this repository.
 ## 👩‍💻 About Me
 
 I am a Senior Data Engineer focused on building scalable, well-documented data infrastructures. My goal is to transform messy data into strategic business assets.
+
 Click [here](https://www.linkedin.com/in/anabelle-rodriguez-rivero-a2115a178/) to see my LinkedIn Profile. 
+
 Click [here](https://www.upwork.com/freelancers/~01417cd8167d75f456?mp_source=share) to see my Upwork Profile.
 
