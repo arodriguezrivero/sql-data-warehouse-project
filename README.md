@@ -42,6 +42,8 @@ The business layer is fully documented to empower analysts:
 
 ## 📂 Project Structure
 ```text
+├── advanced/
+│   └──advanced_data_analysis.sql
 ├── datasets/
 │   ├── source_crm/          
 │   ├── source_erp/          
@@ -70,8 +72,7 @@ The business layer is fully documented to empower analysts:
 │   └── erp_loc_a101__silver_transform.sql
 │   └── erp_px_cat_g1v2__silver_transform.sql
 │   └── test_gold_layer.sql
-├── advanced/
-│   └──advanced_data_analysis.sql
+
 ```
 
 ## 🚀 How to Run
