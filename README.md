@@ -57,7 +57,7 @@ Clone this repository.
 
 2. Run the Stored Procedures in sequence: Bronze -> Silver -> Gold.
 
-##👩‍💻 About Me
+## 👩‍💻 About Me
 
 I am a Senior Data Engineer focused on building scalable, well-documented data infrastructures. My goal is to transform messy data into strategic business assets.
 
