@@ -40,14 +40,34 @@ The business layer is fully documented to empower analysts:
 
 ## 📂 Project Structure
 ```text
-├── src/
-│   ├── bronze/          # DDL and Load scripts for Raw layer
-│   ├── silver/          # Cleansing and normalization scripts
-│   └── gold/            # Dimensional modeling (Facts & Dims)
+├── datasets/
+│   ├── source_crm/          
+│   ├── source_erp/          
 ├── docs/
-│   ├── naming_convention.md
-│   └── data_catalog.md  # Detailed schema definitions
-└── tests/               # Data quality validation scripts
+│   ├── Architecture-DWH.drawio.pdf
+│   ├── Data Flow Diagram.pdf
+│   ├── Data Model Star Schema.pdf
+│   ├── Integration_model.pdf
+│   ├── data_catalog.md
+│   ├── rules_naming_conventions.md
+├── scripts/
+│   ├── bronze/
+|       └── ddl_bronze.sql
+|       └── proc_load_bronze.sql
+│   ├── gold/
+|       └── ddl_gold.sql
+│   ├── silver/
+|       └── ddl_silver.sql
+|       └── proc_load_silver.sql
+|   ├── init_database.sql
+├── tests/
+│   ├── crm_cust_info__silver_transform.sql
+│   ├── crm_prd_info__silver_transform.sql
+│   ├── crm_sales_detail__silver_transform.sql
+│   ├── erp_cust_az12__silver_transform.sql
+│   ├── erp_loc_a101__silver_transform.sql
+│   ├── erp_px_cat_g1v2__silver_transform.sql
+│   ├── test_gold_layer.sql               
 ```
 
 ## 🚀 How to Run
