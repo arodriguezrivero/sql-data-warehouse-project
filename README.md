@@ -48,3 +48,16 @@ The business layer is fully documented to empower analysts:
 │   ├── naming_convention.md
 │   └── data_catalog.md  # Detailed schema definitions
 └── tests/               # Data quality validation scripts
+```
+
+## 🚀 How to Run
+Clone this repository.
+
+1. Execute the init_database.sql script to set up the environment.
+
+2. Run the Stored Procedures in sequence: Bronze -> Silver -> Gold.
+
+##👩‍💻 About Me
+
+I am a Senior Data Engineer focused on building scalable, well-documented data infrastructures. My goal is to transform messy data into strategic business assets.
+
