@@ -63,13 +63,15 @@ The business layer is fully documented to empower analysts:
 |       └── proc_load_silver.sql
 |   ├── init_database.sql
 ├── tests/
-│   ├── crm_cust_info__silver_transform.sql
-│   ├── crm_prd_info__silver_transform.sql
-│   ├── crm_sales_detail__silver_transform.sql
-│   ├── erp_cust_az12__silver_transform.sql
-│   ├── erp_loc_a101__silver_transform.sql
-│   ├── erp_px_cat_g1v2__silver_transform.sql
-│   ├── test_gold_layer.sql               
+│   └──crm_cust_info__silver_transform.sql
+│   └── crm_prd_info__silver_transform.sql
+│   └── crm_sales_detail__silver_transform.sql
+│   └── erp_cust_az12__silver_transform.sql
+│   └── erp_loc_a101__silver_transform.sql
+│   └── erp_px_cat_g1v2__silver_transform.sql
+│   └── test_gold_layer.sql
+├── advanced/
+│   └──advanced_data_analysis.sql
 ```
 
 ## 🚀 How to Run
